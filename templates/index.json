@@ -1,0 +1,192 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "carousel_faEkYH": {
+      "type": "carousel",
+      "blocks": {
+        "image_8KrRBn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg"
+          }
+        },
+        "image_kTbBhT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/snowboard_wax.png"
+          }
+        },
+        "image_beerGw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sample-normal-wax.png"
+          }
+        },
+        "image_e3qn7r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wax-special.png"
+          }
+        },
+        "image_LW74w7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_d624f226-0a89-4fe1-b333-0d1548b43c06.jpg"
+          }
+        },
+        "image_zExRMr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_b9e0da7f-db89-4d41-83f0-7f417b02831d.jpg"
+          }
+        },
+        "image_9hKBcD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/snowboard_purple_hydrogen.png"
+          }
+        },
+        "image_zkKJCB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_9129b69a-0c7b-4f66-b6cf-c4222f18028a.jpg"
+          }
+        },
+        "image_LQJaxm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_0a4e9096-021a-4c1e-8750-24b233166a12.jpg"
+          }
+        },
+        "image_dXitWB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/snowboard_sky.png"
+          }
+        },
+        "image_EpXzLk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_f44a9605-cd62-464d-b095-d45cdaa0d0d7.jpg"
+          }
+        },
+        "image_x9U7hD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gift_card.png"
+          }
+        },
+        "image_JURmtF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg"
+          }
+        },
+        "image_bbbLtE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg"
+          }
+        },
+        "image_qdLwQJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_52f8e304-92d9-4a36-82af-50df8fe31c69.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_8KrRBn",
+        "image_kTbBhT",
+        "image_beerGw",
+        "image_e3qn7r",
+        "image_LW74w7",
+        "image_zExRMr",
+        "image_9hKBcD",
+        "image_zkKJCB",
+        "image_LQJaxm",
+        "image_dXitWB",
+        "image_EpXzLk",
+        "image_x9U7hD",
+        "image_JURmtF",
+        "image_bbbLtE",
+        "image_qdLwQJ"
+      ],
+      "settings": {
+        "desktop_columns": "3",
+        "mobile_columns": "1"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "carousel_faEkYH"
+  ]
+}

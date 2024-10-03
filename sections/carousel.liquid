@@ -1,0 +1,199 @@
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper Container -->
+<div class="swiper page-width">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% if block.settings.image %}
+          <div class="swiper-slide">
+            <img src="{{ block.settings.image | img_url: '1024x' }}" alt="Carousel Image" />
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next">
+      <span></span>
+    </div>
+    <div class="swiper-button-prev">
+      <span></span>
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization Script -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, // Hace que el carrusel sea infinito
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+        //In the default you can change the number you want to have as default in both mobile and desktop.
+        // Small screens/Mobile
+      280: {  
+        slidesPerView: {{ section.settings.mobile_columns | default: 1 }},
+        spaceBetween: 10
+      },
+      320: {  
+        slidesPerView: {{ section.settings.mobile_columns | default: 1 }},
+        spaceBetween: 10
+      },
+      480: {  
+        slidesPerView: {{ section.settings.mobile_columns | default: 1 }},
+        spaceBetween: 10
+      },
+      // Tablets
+      768: {  
+        slidesPerView: {{ section.settings.mobile_columns | default: 1 }},
+        spaceBetween: 10
+      },
+      // Laptops/Desktops 
+      1024: {  
+        slidesPerView: {{ section.settings.desktop_columns | default: 4 }},
+        spaceBetween: 30
+      },
+      1440: {  
+        slidesPerView: {{ section.settings.desktop_columns | default: 4 }},
+        spaceBetween: 40
+      }
+    }
+  });
+</script>
+
+<!-- Swiper Style -->
+<style>
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .swiper-pagination-bullet {
+    background: #000;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+</style>
+
+<!-- Schema in Shopify -->
+{% schema %}
+  {
+    "name": "Carrusel de Imágenes",
+    "settings": [
+      {
+        "type": "select",
+        "id": "desktop_columns",
+        "label": "Columnas en Desktop",
+        "options": [
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          }, {
+            "value": "5",
+            "label": "5"
+          }
+        ],
+        "default": "4"
+      }, {
+        "type": "select",
+        "id": "mobile_columns",
+        "label": "Columnas en Mobile",
+        "options": [
+          {
+            "value": "1",
+            "label": "1"
+          }, {
+            "value": "2",
+            "label": "2"
+          }
+        ],
+        "default": "1"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Imagen",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Seleccionar imagen"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Carrusel de Imágenes",
+        "category": "Media"
+      }
+    ],
+    "max_blocks": 15
+  }
+{% endschema %}
