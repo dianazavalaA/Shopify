@@ -144,7 +144,7 @@ Al llegar a las 15 imagenes ya no se pueden cargar más
 
 ![TopeImagen](./img/Total.jpg)
 
-Seleccionar las columnas desde el panel para Desktop y Mobile
+Seleccionar las columnas desde el panel para Desktop y Mobile, seleccionamos la opción que se desee y damos clic en **"Guardar"**
 
 ![Columnas](./img/Columnas.png)
 
