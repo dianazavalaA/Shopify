@@ -122,6 +122,12 @@ En la parte de  **Swiper Style** aquí es donde se concentra la mágia del CSS, 
 ## Resultados obtenidos
 Se logró desarrollar el carrusel de imagenes, adicional se logró tener el schema de manera visual con los bloques necesarios para poder cargar, eliminar y ocultar las imagenes, así como tener las opciones para elegir de cuantas columnas queremos ver las imagenes en el carrusel que va de 1 a 5 columnas para desktop y para mobile de 1 a 2.
 
+Puedes visitar la página con la siguiente URL y contraseña:
+
+Página: https://quickstart-079dd9f0.myshopify.com/
+
+Contraseña: 65506
+
 A continuación se agregan un par de imagenes para poder ver como quedaron los resultados.
 
 Seleccionar imagenes desde la parte del panel
